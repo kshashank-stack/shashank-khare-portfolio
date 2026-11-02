@@ -11,3 +11,12 @@
 .writing-cta p{font-size:13px;color:#53616a;margin:0}
 .dark-btn{background:var(--navy);color:#fff;white-space:nowrap}
 @media(max-width:650px){.expertise-grid{grid-template-columns:1fr}.writing-cta{align-items:flex-start;flex-direction:column}}
+
+.hero-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:48px;align-items:center}
+.hero-content{min-width:0}
+.profile-photo{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 35%;border-radius:3px;filter:saturate(.88)}
+.hero-portrait{padding:10px;border:1px solid #ffffff2b;background:#ffffff08}
+.hero-portrait span{display:block;padding:12px 3px 2px;color:#a9b6c0;font:9px var(--mono);letter-spacing:.12em;text-align:center}
+.hero h1{font-size:clamp(48px,6.2vw,78px)}
+@media(max-width:850px){.hero-layout{grid-template-columns:minmax(0,1fr) 220px;gap:25px}}
+@media(max-width:650px){.hero-layout{grid-template-columns:1fr}.hero-portrait{max-width:210px;order:-1;margin:0 0 26px}.hero{padding-top:55px}.hero h1{font-size:clamp(46px,11vw,64px)}}
